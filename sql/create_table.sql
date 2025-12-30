@@ -11,3 +11,9 @@ CREATE TABLE national_holidays (
     is_official NUMBER(1) DEFAULT 0 NOT NULL,
     public_holiday NUMBER(1) DEFAULT 0 NOT NULL
 );
+
+--TRUNCATE TABLE national_holidays;
+
+--DROP TABLE national_holidays PURGE;
+
+

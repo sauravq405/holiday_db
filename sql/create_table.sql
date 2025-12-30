@@ -16,4 +16,8 @@ CREATE TABLE national_holidays (
 
 --DROP TABLE national_holidays PURGE;
 
+--ALTER TABLE national_holidays READ ONLY;
+
+--ALTER TABLE national_holidays READ WRITE;
+
 

@@ -40,4 +40,5 @@ def generate_sql(input_file, output_file):
     print(f"Successfully generated {len(sql_statements)} SQL updates in {output_file}")
 
 if __name__ == "__main__":
-    generate_sql('holidays_state_mapping.txt', 'update_holidays.sql')
+
+    generate_sql('holidays_state_mapping.txt', 'update_holidays_2026.sql')

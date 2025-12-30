@@ -4,7 +4,7 @@ import pandas as pd
 # Configuration
 # -----------------------------
 CSV_PATH = "holidays_2026.csv"          # input CSV
-OUTPUT_SQL = "national_holidays_2026.sql"
+OUTPUT_SQL = "insert_holidays_2026.sql"
 YEAR = 2026
 
 # -----------------------------
@@ -58,3 +58,4 @@ with open(OUTPUT_SQL, "w", encoding="utf-8") as f:
     f.write("\n".join(lines))
 
 print(f"SQL file generated successfully: {OUTPUT_SQL}")
+

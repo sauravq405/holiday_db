@@ -19,7 +19,7 @@ load_dotenv()
 # Defaults provided for non-sensitive values based on prompt
 ORACLE_USER = os.getenv("ORACLE_USER", "sdp")
 ORACLE_PASSWORD = os.getenv("ORACLE_PASSWORD")  # Must be provided
-ORACLE_DSN = os.getenv("ORACLE_DSN", "localhost:1522/FREEPDB1") 
+ORACLE_DSN = os.getenv("ORACLE_DSN", "35.209.154.205:1521/XE") 
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 LLM_MODEL = "meta-llama/llama-3.3-70b-instruct:free"
@@ -88,7 +88,7 @@ def generate_sql_from_llm(question: str) -> str:
             detail="OpenRouter API key not configured."
         )
 
-    prompt = f"""You are an Oracle SQL expert.
+    prompt = f"""You are an Oracle SQL expert. Consider a Oracle 18c xe database.
 The available table is: NATIONAL_HOLIDAYS
 Columns: holiday_id, holiday_name, holiday_date, holiday_year, holiday_type, state, is_official, public_holiday.
 

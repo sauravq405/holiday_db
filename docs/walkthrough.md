@@ -35,7 +35,7 @@ Ran `python -m py_compile app.py` - **SUCCESS** (No syntax errors).
     ```
 3.  **Start Server**:
     ```bash
-    uvicorn app:app --reload
+    uvicorn app:app --host 0.0.0.0 --port 8000 --reload
     ```
 4.  **Test Query**:
     ```bash

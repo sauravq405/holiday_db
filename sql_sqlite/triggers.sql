@@ -1,0 +1,2 @@
+-- SQLite handles auto-increment logic via INTEGER PRIMARY KEY AUTOINCREMENT.
+-- The Oracle trigger trg_national_holidays_bi is not needed.

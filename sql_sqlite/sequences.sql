@@ -1,0 +1,2 @@
+-- SQLite uses AUTOINCREMENT on INTEGER PRIMARY KEY columns.
+-- No explicit sequence object is needed for national_holidays_seq.

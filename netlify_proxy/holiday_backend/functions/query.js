@@ -1,5 +1,5 @@
 export const handler = async (event) => {
-  // Handle CORS preflight
+  // Handle CORS preflight action
   if (event.httpMethod === "OPTIONS") {
     return {
       statusCode: 200,

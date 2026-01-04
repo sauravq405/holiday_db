@@ -1,3 +1,5 @@
+BEGIN TRANSACTION;
+
 -- 1. Reset everything to 0 first (safety step - optional if you trust current data)
 UPDATE national_holidays
 SET public_holiday = 0

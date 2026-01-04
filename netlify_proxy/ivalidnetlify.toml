@@ -1,0 +1,2 @@
+[build]
+  functions = "holiday_backend/functions"

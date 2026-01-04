@@ -180,7 +180,7 @@ def query_endpoint(request: QueryRequest):
         raise HTTPException(status_code=400, detail="Question cannot be empty.")
         
     # 1. Generate SQL
-    sql = generate_sql_from_llm(question)
+    sql = generate_sql_from_llm(question) 
     
     # 2. Validate SQL
     validate_sql(sql)

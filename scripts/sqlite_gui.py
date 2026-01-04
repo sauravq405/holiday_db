@@ -50,11 +50,13 @@ Exit venv:
 deactivate
 """
 
+import os
 import sqlite3
 import pandas as pd
 import streamlit as st
 
-DB_PATH = "/holiday/home/holiday.db"
+DB_PATH = os.path.expanduser("~/holiday.db")
+st.write("Resolved DB path:", DB_PATH)
 
 st.set_page_config(
     page_title="SQLite GUI",
